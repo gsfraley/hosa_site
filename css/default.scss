@@ -7,5 +7,7 @@
 
 $sidebar-width: 240px;
 
-@import "default/full/container";
-@import "default/full/sidebar";
+@import "full/sidebar";
+@import "full/container";
+
+@import "full/content";

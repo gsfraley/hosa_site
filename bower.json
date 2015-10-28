@@ -1,0 +1,23 @@
+{
+  "name": "hosa_site",
+  "authors": [
+    "Greg Fraley <gsfraley@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "smoothstate": "~0.7.2",
+    "animate.css": "~3.4.0"
+  }
+}

@@ -5,10 +5,24 @@
 <html>
     <head>
          <meta charset="UTF-8" />
-         <link href="{{ '/css/default.css' | prepend: site.baseurl }}" rel="stylesheet" />
+
+         <title>{{ page.title }}</title>
+         <link href="{{ '/bower_components/animate.css/animate.min.css' | prepend: site.baseurl }}" rel="stylesheet" type="text/css" />
+         <link href="{{ '/css/default.css' | prepend: site.baseurl }}" rel="stylesheet" type="text/css" />
+         <script src="{{ '/bower_components/jquery/dist/jquery.min.js' | prepend: site.baseurl }}" type="text/javascript"></script>
+         <script src="{{ '/bower_components/smoothstate/jquery.smoothState.min.js' | prepend: site.baseurl }}" type="text/javascript"></script>
     </head>
     <body>
-        <div id="sidebar"></div>
-        <div id="container"></div>
+        <div id="sidebar">
+            <nav>
+                <a href="{{ '/' | prepend: site.baseurl }}">Pitt HOSA</a>
+                <a href="{{ '/joinhosa.html' | prepend: site.baseurl }}">Join HOSA</a>
+            </nav>
+        </div>
+        <div id="container">
+            {{ content }}
+        </div>
+
+        <script src="{{ '/js/default.js' | prepend: site.baseurl }}" type="text/javascript"></script>
     </body>
 </html>
