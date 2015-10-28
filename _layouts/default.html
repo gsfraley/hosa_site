@@ -7,22 +7,16 @@
          <meta charset="UTF-8" />
 
          <title>{{ page.title }}</title>
-         <link href="{{ '/bower_components/animate.css/animate.min.css' | prepend: site.baseurl }}" rel="stylesheet" type="text/css" />
-         <link href="{{ '/css/default.css' | prepend: site.baseurl }}" rel="stylesheet" type="text/css" />
-         <script src="{{ '/bower_components/jquery/dist/jquery.min.js' | prepend: site.baseurl }}" type="text/javascript"></script>
-         <script src="{{ '/bower_components/smoothstate/jquery.smoothState.min.js' | prepend: site.baseurl }}" type="text/javascript"></script>
+         {% include depends.html %}
     </head>
     <body>
-        <div id="sidebar">
-            <nav>
-                <a href="{{ '/' | prepend: site.baseurl }}">Pitt HOSA</a>
-                <a href="{{ '/joinhosa.html' | prepend: site.baseurl }}">Join HOSA</a>
-            </nav>
+        <div id="page">
+            <div id="sidebar">
+                {% include sidebar.html %}
+            </div>
+            <div id="container">
+                {{ content }}
+            </div>
         </div>
-        <div id="container">
-            {{ content }}
-        </div>
-
-        <script src="{{ '/js/default.js' | prepend: site.baseurl }}" type="text/javascript"></script>
     </body>
 </html>
