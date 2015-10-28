@@ -4,21 +4,34 @@
     left: 0;
     width: $sidebar-width;
     height: 100%;
-    background: #333;
+    background: linear-gradient(to right, #333 0%, #333 60%, #2a2a2a 90%, #222 96%, #111 100%);
 }
 
-nav a {
-    display: block;
-    color: white;
-    text-decoration: none;
+nav {
+    text-align: right;
 
-    &:hover {
-        background: #555;
+    hr {
+        border: 1px solid rgba(17, 17, 17, 0.2);
     }
-}
 
-.logo {
-    display: block;
-    width: 200px;
-    margin: 0 auto;
+    a {
+        display: block;
+        color: #aaa;
+        text-decoration: none;
+        padding: 10px 24px;
+
+        &:hover {
+            background: rgba(85, 85, 85, 0.5);
+        }
+
+        &.logo {
+            padding: 0;
+
+            img {
+                display: block;
+                width: 200px;
+                margin: 0 auto;
+            }
+        }
+    }
 }
