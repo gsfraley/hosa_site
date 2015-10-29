@@ -4,19 +4,25 @@
 <!DOCTYPE html>
 <html>
     <head>
-         <meta charset="UTF-8" />
-
-         <title>{{ page.title }}</title>
-         {% include depends.html %}
+        <title>{{ page.title }}</title>
+        <meta charset="utf-8" />
+        {% include depends.html %}
     </head>
     <body>
-        <div id="page">
-            <div id="sidebar">
-                {% include sidebar.html %}
+        <div id="sidebar">
+            <a id="logo" href="{{ '/' | prepend: site.baseurl }}">
+                <img src="{{ '/img/logo.png' | prepend: site.baseurl }}" alt="Pitt HOSA" />
+            </a>
+            <br />
+            <div id="links">
+                <a href="{{ '/joinhosa.html' | prepend: site.baseurl }}">Join HOSA</a>
+                <a href="{{ '/localconference.html' | prepend: site.baseurl }}">Local Conference</a>
+                <a href="{{ '/statesandnationals.html' | prepend: site.baseurl }}">States &amp; Nationals</a>
             </div>
-            <div id="container">
-                {{ content }}
-            </div>
+            <footer></footer>
+        </div>
+        <div id="container" class="{{ page.shortname }}">
+            {{ content }}
         </div>
     </body>
 </html>

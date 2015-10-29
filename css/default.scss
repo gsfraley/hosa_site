@@ -5,16 +5,8 @@
 
 @import "base";
 
-body {
-    min-width: 900px;
-}
-
-$sidebar-width: 240px;
+$sidebar-width: 200px;
 
 @import "full/sidebar";
 @import "full/container";
-
-@import "full/content";
-
-$front-img-url: '../img/frontpage/header.png';
-@import "full/frontpage";
+@import "full/page";
