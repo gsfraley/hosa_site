@@ -1,10 +1,9 @@
 #frontpage {
-    #front {
-        height: 400px;
+    #front, #middle, #back {
+        height: 300px;
 
-        padding: 80px;
+        padding: 120px 80px;
 
-        background: url("../img/front_bg.jpg");
         background-attachment: fixed;
         background-size: cover;
         background-position: center;
@@ -24,13 +23,23 @@
         }
     }
 
-    #whocanjoin {
-        height: 500px;
-        padding: 60px 0;
-        background: #eee;
+    #front {
+        background-image: url("../img/front_bg.jpg");
+    }
 
+    #middle {
+        background-image: url("../img/middle_bg.jpg");
+
+        p {
+            background: rgba(0, 0, 0, 0.6);
+        }
+    }
+
+    #news, #whocanjoin {
         font-family: Dekar;
         text-align: center;
+        padding: 60px 20px;
+        background: #eee;
 
         h1, p {
             margin: 0;
@@ -47,7 +56,16 @@
         br {
             line-height: 40px;
         }
+    }
 
+    #news {
+        p, a {
+            color: #000;
+            font-size: 32px;
+        }
+    }
+
+    #whocanjoin {
         .type {
             display: inline-block;
             width: 340px;
