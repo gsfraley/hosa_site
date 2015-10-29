@@ -4,9 +4,11 @@
     left: $sidebar-width;
 
     width: calc(100% - #{$sidebar-width});
+    min-width: 800px;
     min-height: 100vh;
 
     background: #777;
+    box-shadow: 0 0 20px 0 #000;
 }
 
 @import "container_backgrounds";

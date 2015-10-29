@@ -4,9 +4,11 @@
 @charset "utf-8";
 
 @import "base";
+@import "dekar_font";
 
 $sidebar-width: 200px;
 
 @import "full/sidebar";
 @import "full/container";
 @import "full/page";
+@import "full/frontpage";
