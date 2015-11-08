@@ -1,19 +1,5 @@
-#container.statesandnationals {
-    background: url("../img/statesandnationals_bg.jpg");
-    background-attachment: fixed;
-    animation: 20s linear infinite statesandnationals_bg;
-
-    @keyframes statesandnationals_bg {
-        from {
-            background-position: 3000px center;
-        } to {
-            background-position: 0 center;
-        }
-    }
-}
-
 #container.localconference {
-    background: url("../img/localconference_bg.jpg");
+    background: url("../img/localconference/localconference_bg.jpg");
     background-attachment: fixed;
     background-size: cover;
 }
